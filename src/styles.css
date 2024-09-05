@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Body Component Styles */
+  .body {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Task Counting Div Styles */
+  .task-counting-div {
+    background-color: #f4f4f4; /* Light background for the counting section */
+    padding: 10px 20px; /* Space around the content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the section */
+  }
+  
+  .total-tasks-heading, .total-completed-tasks-heading {
+    font-size: 16px; /* Adjust size for headings */
+    font-weight: 600; /* Bold headings */
+    color: #333; /* Dark text color for readability */
+    margin: 0; /* Remove default margin */
+    padding: 5px 0; /* Space above and below the text */
+  }
+  
+  .total-tasks-value, .total-completed-tasks-value {
+    font-size: 16px; /* Same size for values */
+    font-weight: 700; /* Slightly bolder value text */
+    color: #007bff; /* Primary color for values */
+  }
+  
+  .total-tasks-heading {
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+    padding-bottom: 5px; /* Space below the heading */
+  }
+  
+  .total-completed-tasks-heading {
+    padding-top: 5px; /* Space above the heading */
+  }
+  
+  
+  /* TasksList Component Styles */
+  .tasks-list {
+    margin-top: 20px;
+  }
+  
+  .task-container {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-li,
+  .completed-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .completed-task {
+    background-color: #d4edda;
+    color: #155724;
+    text-decoration: line-through;
+  }
+  
+  .task-li p {
+    margin: 0;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  button + button {
+    margin-left: 10px;
+  }
+  
+  /* Editing Task Input */
+  .editingInput {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .body {
+      padding: 15px;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
